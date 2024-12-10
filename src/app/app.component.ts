@@ -14,5 +14,11 @@ import { DashboardComponent } from './dashboard/dashboard.component';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
+
+  menuActive = false ;
+toggleMenu() {
+console.log("hamburger is clicked");
+this.menuActive=!this.menuActive;
+}
   title = 'job-portal-fe';
 }

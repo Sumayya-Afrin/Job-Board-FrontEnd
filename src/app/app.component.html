@@ -1,17 +1,19 @@
 <header>
-  <nav>
+  <div class="logo">CareerConnect</div>
+  <div class="hamburger" (click)="toggleMenu()">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+  <nav class="nav-bar" [class.active]="menuActive">
     <ul>
-      <li><a routerLink="">Home</a></li>
-      |
+      <li><a routerLink="" class="active">Home</a></li>
       <li><a routerLink="/login">Login</a></li>
-      |
       <li><a routerLink="/register">Register</a></li>
-      |
-      <li><a routerLink="/job/:id">Job Detals</a></li>
-      |
       <li><a routerLink="/dashboard">Dashboard</a></li>
+      <li><a routerLink="/about">About</a></li>
+      <li><a routerLink="/contact">Contact</a></li>
     </ul>
   </nav>
 </header>
-
-<router-outlet />
+<router-outlet></router-outlet>
