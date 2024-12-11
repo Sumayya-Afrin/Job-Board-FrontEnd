@@ -20,7 +20,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 100px;
+  padding: 0 40px;
 }
 
 .logo {
@@ -33,6 +33,15 @@ header {
   display: none;
   cursor: pointer;
 }
+
+.close-icon {
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+
+
 
 .hamburger .line {
   width: 30px;
@@ -82,6 +91,8 @@ header {
     display: block;
   }
 
+
+
   .nav-bar {
     position: absolute;
     top: 60px;
@@ -96,13 +107,16 @@ header {
     align-items: center;
     justify-content: center;
    
+   
 
     ul {
       flex-direction: column;
       align-items: center;
       opacity: 0;
       transition: opacity 0.3s ease;
-      margin: 0; /* Remove margin to center the items */
+      margin: 0; 
+      gap: 1.5rem;
+      
     }
 
     &.active {
@@ -111,12 +125,15 @@ header {
       ul {
         opacity: 1;
       }
+
+     
     }
   }
 
   .nav-bar ul li a {
     margin-bottom: 12px;
     color: white;
-    gap: 0.2rem;
+    
+    
   }
 }

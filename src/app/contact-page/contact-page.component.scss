@@ -1,0 +1,111 @@
+.contact-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    background-color: white;
+    place-content: center;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.form-section, .info-section {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    width: 45%;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Heading Styles */
+h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Input and Textarea Styles */
+input, textarea {
+    width: 80%;
+    padding: 15px;
+    margin-bottom: 7px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Button Styles */
+button {
+    background-color: #00bcd4;;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: gray;
+}
+
+/* Social Icons Styles */
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #00bcd4;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .form-section, .info-section {
+        width: 100%; /* Full width on smaller screens */
+        margin-bottom: 20px; /* Space between sections */
+        padding: 15px; /* Adjust padding for smaller screens */
+        order: initial; /* Reset order for mobile view */
+    }
+
+    /* Ensure the info section is below the form section */
+    .info-section {
+        order: 2; /* Place info section below form section */
+        margin-top: 20px; /* Add some space above the info section */
+    }
+
+    input, textarea {
+        width: 90%; /* Slightly wider inputs on small screens */
+        padding: 12px; /* Adjust padding for smaller screens */
+    }
+
+    button {
+        width: auto; /* Allow button to auto-size */
+        padding: 8px 16px; /* Adjust button padding */
+    }
+
+    .social-icons a {
+        font-size: 18px; /* Slightly smaller icons on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.5em; /* Reduce heading size on very small screens */
+        margin-bottom: 15px; /* Adjust margin for smaller screens */
+    }
+
+    input, textarea, button {
+        width: 95%; /* Maximize input/button width on very small screens */
+        padding: 10px; /* Further reduce padding for very small screens */
+    }
+}
