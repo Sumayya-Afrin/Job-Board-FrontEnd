@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light gray background */
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+p {
+    margin-bottom: 25px;
+    color: #666;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left; /* Align labels and inputs to the left */
+}
+
+label {
+    font-size: 14px;
+    color: #666;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+select { /* Added select styling */
+    width: calc(100% - 24px); /* Adjust width to fit inside padding */
+    padding: 12px; /* Increased padding for comfort */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input:focus,
+select:focus { /* Focus styling for select */
+    outline: none;
+    border-color: black; /* Change border color on focus */
+}
+
+.btn-login {
+    background: black; /* Main button color */
+    color: white;
+    padding: 12px; /* Increased padding for comfort */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    width: 100%;
+    font-size: 16px; /* Button font size */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.btn-login:hover {
+    background: gray; /* Button hover effect */
+}
+
+.links {
+    margin-top: 20px; /* Space above links */
+    font-size: 14px; /* Font size for links */
+}
+
+.forgot-password {
+    display: block; /* Block display for better layout */
+    margin-bottom: 10px; /* Space below forgot password link */
+    color: #6a11cb; /* Color for link */
+    text-decoration: none; /* No underline by default */
+}
+
+.signup-line {
+    color: #666; /* Color for signup line text */
+}
+
+.signup-line a {
+    color: #6a11cb; /* Color for signup link */
+}
+
+.signup-line a:hover,
+.forgot-password:hover { 
+   text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+   .login-box {
+       padding: 30px; 
+       width: 90%; 
+   }
+
+   h2 {
+       font-size: 18px; 
+       margin-bottom: 10px; 
+   }
+
+   p {
+       font-size: 14px; 
+       margin-bottom: 15px; 
+   }
+
+   .btn-login {
+       font-size: 14px; 
+       padding: 10px; 
+   }
+
+   input,
+   select { 
+       padding: 10px; 
+       font-size: 14px; 
+   }
+}
