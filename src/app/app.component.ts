@@ -5,11 +5,13 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { JobDetailsComponent } from './job-details/job-details.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { AboutPageComponent } from "./about-page/about-page.component";
+import { ContactPageComponent } from "./contact-page/contact-page.component";
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterModule, LoginComponent, RegisterComponent, JobDetailsComponent, DashboardComponent],
+  imports: [RouterOutlet, RouterModule, LoginComponent, RegisterComponent, JobDetailsComponent, DashboardComponent, AboutPageComponent, ContactPageComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
