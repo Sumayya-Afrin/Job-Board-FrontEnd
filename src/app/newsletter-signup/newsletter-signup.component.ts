@@ -7,7 +7,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 @Component({
   selector: 'app-newsletter-signup',
   templateUrl: './newsletter-signup.component.html',
-  styleUrls: ['./newsletter-signup.component.css'],
+  styleUrls: ['./newsletter-signup.component.scss'],
   imports: [MatFormField, MatLabel, MatError,ReactiveFormsModule],
 })
 export class NewsletterSignupComponent {
