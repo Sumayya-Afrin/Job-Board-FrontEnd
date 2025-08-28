@@ -29,3 +29,7 @@ button {
     transform: translateY(-2px); // Slight lift effect on hover
   }
 }
+
+.center-container > input:hover {
+     border-color:  #0056b3;
+}
