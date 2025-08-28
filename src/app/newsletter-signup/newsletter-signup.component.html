@@ -1,0 +1,43 @@
+<!-- newsletter-signup.component.html -->
+<div class="newsletter-container">
+  <h2>📩 Stay Updated!</h2>
+  <p>
+    Get the latest job alerts, career tips, and hiring updates directly to your
+    inbox.
+  </p>
+
+  <form
+    (ngSubmit)="onSubmit()"
+    [formGroup]="newsletterForm"
+    class="newsletter-form"
+  >
+    <mat-form-field appearance="outline" class="email-field">
+      <mat-label>Email Address</mat-label>
+      <input
+        matInput
+        placeholder="Enter your email"
+        formControlName="email"
+        required
+      />
+      <mat-error
+        *ngIf="
+          newsletterForm.controls['email'].invalid &&
+          newsletterForm.controls['email'].touched
+        "
+      >
+        Please enter a valid email address.
+      </mat-error>
+    </mat-form-field>
+
+    <button
+      mat-raised-button
+      color="primary"
+      type="submit"
+      [disabled]="newsletterForm.invalid"
+    >
+      Subscribe
+    </button>
+  </form>
+
+  <small class="note">No spam, unsubscribe anytime.</small>
+</div>

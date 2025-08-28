@@ -60,15 +60,14 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); // Enhanced shadow for depth
   
      .icon {
-      font-size: 2.5rem; // Larger icons for better visibility
+      font-size: 2rem; // Larger icons for better visibility
       color: black; // Color to match the theme
       margin-bottom: 15px;
      }
   
-     h3 {
-       font-size: 1.6rem; // Slightly larger heading size
+     h2 {
        margin-bottom: 10px;
-       color: #343a40; // Darker heading color for contrast
+       color: #343a40; 
      }
   
      p {
@@ -86,5 +85,12 @@
          color: #007bff; 
        }
      }
+  }
+
+
+  .feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); // More pronounced shadow on hover
+    cursor: pointer;
   }
   
