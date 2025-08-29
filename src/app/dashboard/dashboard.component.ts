@@ -1,13 +1,20 @@
 import { Component } from '@angular/core';
-import { SearchBarComponent } from "../search-bar/search-bar.component";
-import { PieChartComponent } from "../pie-chart/pie-chart.component";
+import { SearchBarComponent } from '../search-bar/search-bar.component';
+import { PieChartComponent } from '../pie-chart/pie-chart.component';
+import { JobPostComponent } from '../job-post/job-post.component';
+import { RouterOutlet } from '@angular/router';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-dashboard',
-  imports: [SearchBarComponent, PieChartComponent],
+  imports: [
+    RouterOutlet,
+    RouterModule
+],
   templateUrl: './dashboard.component.html',
-  styleUrl: './dashboard.component.scss'
+  styleUrl: './dashboard.component.scss',
 })
 export class DashboardComponent {
 
+  
 }
