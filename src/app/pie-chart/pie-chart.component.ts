@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Chart, ArcElement, Tooltip, Legend, Title } from 'chart.js';
 import { CanvasJSAngularChartsModule } from '@canvasjs/angular-charts';
+import { LoginComponent } from "../login/login.component";
 
 @Component({
   selector: 'app-pie-chart',
@@ -14,7 +15,7 @@ export class PieChartComponent {
     theme: 'light2', // or "dark1", "dark2"
     exportEnabled: true,
     title: {
-      text: 'Applications Over Time',
+      text: '',
     },
     subtitles: [
       {

@@ -1,14 +1,15 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4; /* Light gray background */
+    background-color: #f4f4f4; 
+    
 }
 
 .login-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .login-box {
@@ -125,4 +126,9 @@ select:focus { /* Focus styling for select */
        padding: 10px; 
        font-size: 14px; 
    }
+}
+
+
+#user-type{
+        width: -webkit-fill-available;
 }

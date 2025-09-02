@@ -1,0 +1,47 @@
+
+/* Form */
+.post-job-form .form-group {
+  margin-bottom: 15px;
+}
+
+.post-job-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.post-job-form input,
+.post-job-form select,
+.post-job-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.post-job-form input:focus,
+.post-job-form select:focus,
+.post-job-form textarea:focus {
+  border-color: #2563eb;
+}
+
+.btn-submit {
+  background: black;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.btn-submit:hover {
+  background: gray;
+  color: black;
+}

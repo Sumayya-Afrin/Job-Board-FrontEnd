@@ -7,7 +7,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-login',
-  imports: [FormsModule ,HttpClientModule, BrowserModule],
+  imports: [FormsModule , BrowserModule],
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss'
 })

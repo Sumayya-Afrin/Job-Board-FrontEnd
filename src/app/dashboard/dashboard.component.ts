@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { SearchBarComponent } from '../search-bar/search-bar.component';
 import { PieChartComponent } from '../pie-chart/pie-chart.component';
-import { JobPostComponent } from '../job-post/job-post.component';
 import { RouterOutlet } from '@angular/router';
 import { RouterModule } from '@angular/router';
 

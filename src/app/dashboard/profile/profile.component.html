@@ -1,1 +1,68 @@
-<p>profile works!</p>
+<div class="profile-container">
+  <h2>Edit Profile</h2>
+  <form [formGroup]="profileForm" (ngSubmit)="saveProfile()">
+    
+    <div class="section">
+      <label>Name:</label>
+      <input formControlName="name" />
+    </div>
+
+    <div class="section">
+      <label>Profession:</label>
+      <input formControlName="profession" />
+    </div>
+
+    <div class="section">
+      <label>City:</label>
+      <input formControlName="city" />
+    </div>
+
+    <div class="section">
+      <label>Bio:</label>
+      <textarea formControlName="bio"></textarea>
+    </div>
+
+  
+    <div class="section">
+      <h3>Education</h3>
+      <div formArrayName="education">
+        <div *ngFor="let edu of education.controls; let i = index">
+          <input [formControlName]="i" placeholder="Add education" />
+          <button type="button" (click)="removeEducation(i)">
+            <i class="fa-solid fa-trash"></i>
+          </button>
+        </div>
+      </div>
+      <button type="button" (click)="addEducation()">+ Add Education</button>
+    </div>
+
+    <div class="section">
+      <h3>Experience</h3>
+      <div formArrayName="experience">
+        <div *ngFor="let exp of experience.controls; let i = index">
+          <input [formControlName]="i" placeholder="Add experience" />
+          <button type="button" (click)="removeExperience(i)">
+            <i class="fa-solid fa-trash"></i>
+          </button>
+        </div>
+      </div>
+      <button type="button" (click)="addExperience()">+ Add Experience</button>
+    </div>
+
+   
+    <div class="section">
+      <h3>Skills</h3>
+      <div formArrayName="skills">
+        <div *ngFor="let skill of skills.controls; let i = index">
+          <input [formControlName]="i" placeholder="Add skill" />
+          <button type="button" (click)="removeSkill(i)"><i class="fa-solid fa-trash"></i></button>
+        </div>
+      </div>
+      <button type="button" (click)="addSkill()">+ Add Skill</button>
+    </div>
+
+    <button type="submit" class="save-btn">Save Profile</button>
+  </form>
+</div>
+
+

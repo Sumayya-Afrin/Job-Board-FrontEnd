@@ -12,6 +12,7 @@ import { PostJobComponent } from './dashboard/post-job/post-job.component';
 import { ApplicationsComponent } from './dashboard/applications/applications.component';
 import { SavedJobsComponent } from './dashboard/saved-jobs/saved-jobs.component';
 import path from 'path';
+import { PieChartComponent } from './pie-chart/pie-chart.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -26,6 +27,7 @@ export const routes: Routes = [
       { path: 'post-job', component: PostJobComponent },
       { path: 'applications', component: ApplicationsComponent },
       { path: 'saved-jobs', component: SavedJobsComponent },
+      { path: 'stats', component: PieChartComponent},
       { path: '', redirectTo: 'profile', pathMatch: 'full' },
     ],
   },
