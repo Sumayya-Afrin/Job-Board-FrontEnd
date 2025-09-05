@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
-import { ContactPageComponent } from "../contact-page/contact-page.component";
+import { ContactPageComponent } from '../contact-page/contact-page.component';
 
 @Component({
   selector: 'app-about-page',
-  imports: [ContactPageComponent],
+  imports: [],
   templateUrl: './about-page.component.html',
-  styleUrl: './about-page.component.scss'
+  styleUrl: './about-page.component.scss',
 })
-export class AboutPageComponent {
-
-}
+export class AboutPageComponent {}
